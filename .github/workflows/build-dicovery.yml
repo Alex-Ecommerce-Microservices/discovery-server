@@ -21,9 +21,6 @@ jobs:
         with:
           context: .  # Build ngay tại thư mục gốc của repo này
           push: true
-          platforms: linux/amd64, linux/arm64  # Build đa kiến trúc để hỗ trợ cả AMD64 và ARM64
           tags: |
-          # 1. Luôn cập nhật bản mới nhất cho Watchtower
             ${{ secrets.DOCKERHUB_USERNAME }}/discovery-service:latest
-          # 2. Đánh số phiên bản theo số lần chạy của GitHub (v1, v2, v3...)
             ${{ secrets.DOCKERHUB_USERNAME }}/discovery-service:v${{ github.run_number }}
