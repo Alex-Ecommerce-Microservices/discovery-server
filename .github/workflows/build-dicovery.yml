@@ -21,4 +21,5 @@ jobs:
         with:
           context: .  # Build ngay tại thư mục gốc của repo này
           push: true
+          platform: linux/amd64, linux/arm64  # Build đa kiến trúc để hỗ trợ cả AMD64 và ARM64
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery-service:latest
