@@ -10,7 +10,7 @@ public class DiscoveryServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DiscoveryServiceApplication.class, args);
-		//Just make a change 1 to test the commit and push functionality of git
+		// Just make a change 1 to test the commit and push functionality of git
 	}
 
 }
